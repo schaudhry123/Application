@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+	<title>Values</title>
+
+	<link rel="stylesheet" type="text/css" href="app.css">
+
+	<script type="text/javascript" src="build/iscroll-zoom.js"></script>
+
+	<script type="text/javascript">
+
+	var myScroll;
+
+	function loaded () {
+		myScroll = new IScroll('#wrapper', {
+			zoom: true,
+			scrollX: true,
+			scrollY: true,
+			mouseWheel: true,
+			wheelAction: 'zoom',
+			bounceEasing: 'elastic',
+			bounceTime: 900,
+			click: true
+		});
+	}
+
+	//document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+
+	</script>
+
+<style>
+	#wrapper {
+		position: absolute;
+		z-index: 1;
+		top: 50px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		background: #fff;
+		overflow: hidden;
+	}
+
+	#scroller {
+		position: absolute;
+		z-index: 1;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		width: 100%;
+		-webkit-transform: translateZ(0);
+		-moz-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		-o-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-text-size-adjust: none;
+		-moz-text-size-adjust: none;
+		-ms-text-size-adjust: none;
+		-o-text-size-adjust: none;
+		text-size-adjust: none;
+	}
+
+</style>
+
+</head>
+<body onload="loaded()">
+	<div class="header">
+		<ul>
+			<li class="hover"><a href="index.html">Home</a></li>
+			<li class="hover"><a href="values.html">Values</a></li>
+			<li class-"hover"><a href="mission.html">Mission</a></li>
+			<li class="hover"><a href="solutions.html">Solutions</a></li>			
+		</ul>
+	</div>
+
+	<div id="wrapper">
+		<div id="scroller">
+			<h1>Zscaler Values</h1>
+			<br>
+			<div class="bullet">
+				<ul>
+					<li>Innovation</li>
+					<li>Customer Success</li>
+					<li>Ownership</li>
+					<li>Passion & Attitude</li>
+					<li>Open Communication</li>
+					<li>Adaptability</li>
+					<li>Teamwork</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
