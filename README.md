@@ -1,4 +1,4 @@
-MyApp
+Application
 ===
-ZMessage app built using HTML with iScroll.
+Application built using HTML with iScroll.
 
